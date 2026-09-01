@@ -1,26 +1,49 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FBF9F5;
+  --background-alt: #F4EFEA;
+  --foreground: #2D2825;
+  --card: #FFFFFF;
+  --border: #E5E0D8;
+  
+  /* Highlights / Accents */
+  --color-sage: #9CAE96;
+  --color-sage-light: #E1E8DE;
+  --color-terracotta: #C97A70;
+  --color-terracotta-light: #F2DBD8;
+  --color-ochre: #D3A25D;
+  --color-ochre-light: #F5E8D6;
+  --color-slate: #9AA6B2;
+  --color-slate-light: #E2E6E9;
+  --color-slate-blue: #7F95A3;
+  --color-slate-blue-light: #D9E1E8;
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-background-alt: var(--background-alt);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-card: var(--card);
+  --color-border: var(--border);
+  
+  --color-sage: var(--color-sage);
+  --color-sage-light: var(--color-sage-light);
+  --color-terracotta: var(--color-terracotta);
+  --color-terracotta-light: var(--color-terracotta-light);
+  --color-ochre: var(--color-ochre);
+  --color-ochre-light: var(--color-ochre-light);
+  --color-slate: var(--color-slate);
+  --color-slate-light: var(--color-slate-light);
+  --color-slate-blue: var(--color-slate-blue);
+  --color-slate-blue-light: var(--color-slate-blue-light);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-merriweather), ui-serif, Georgia, serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
 }
