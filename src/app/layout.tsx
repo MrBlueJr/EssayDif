@@ -14,7 +14,7 @@ const merriweather = Merriweather({
 });
 
 export const metadata: Metadata = {
-  title: "Essay Comparison Tool",
+  title: "EssayDif - Comparison Tool",
   description: "A multi-layer text comparison tool for essays and long-form writing.",
 };
 

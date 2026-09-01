@@ -1,3 +1,4 @@
+import { Logo } from "./Logo";
 import { 
   ArrowRightLeft, 
   FileText, 
@@ -24,9 +25,16 @@ export function Toolbar({ filters, setFilters }: ToolbarProps) {
 
   return (
     <div className="h-14 border-b border-border bg-card flex items-center px-6 gap-6 shadow-sm z-10">
-      <div className="font-bold text-foreground flex items-center gap-2">
-        <FileText className="w-5 h-5 text-ochre" />
-        Essay<span className="text-foreground/50">Diff</span>
+      <div className="flex items-center gap-2.5 cursor-default">
+        <Logo className="w-8 h-8 text-ochre drop-shadow-sm" />
+        <div className="flex flex-col justify-center">
+          <span className="font-extrabold text-foreground tracking-tight leading-none text-[1.1rem]">
+            Essay<span className="text-ochre">Dif</span>
+          </span>
+          <span className="text-[0.6rem] font-bold text-foreground/40 tracking-[0.2em] uppercase leading-none mt-1">
+            Comparison Tool
+          </span>
+        </div>
       </div>
 
       <div className="w-px h-6 bg-border mx-2" />
